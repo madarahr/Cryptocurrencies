@@ -1,5 +1,5 @@
 # Cryptocurrencies
-## Unsupervised machine learning
+## Unsupervised Machine Learning
 
 ### Background
 Due to the rise of the cryptocurrencies, an investment bank is interested in offering new cryptocurrencies investment portfolio for its customers. A report of which cryptocurrencies are on the trading market and how cryptocurrencies could be grouped toward creating a classification for developing this new investment product is attempted to help build an investment portfolio.
@@ -39,7 +39,7 @@ Using Eigenvectors, the PCA dimensions are reduced to 3 with a dataframe to be u
 
 
 #### Clustering Cryptocurrencies Using K-Means
-AN elbow curve is created to provide a means to determine the number of K means and providing a predicted cluster.
+An elbow curve is created to provide a means to determine the number of K means and providing a predicted cluster.
 
 ![](Images/K-Mean.png)
 ![](Images/PCS.png)
