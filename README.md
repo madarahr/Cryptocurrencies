@@ -42,6 +42,8 @@ Using Eigenvectors, the PCA dimensions are reduced to 3 with a dataframe to be u
 An elbow curve is created to provide a means to determine the number of K means and providing a predicted cluster.
 
 ![](Images/K-Mean.png)
+
+
 ![](Images/PCS.png)
 
 A new dataframe is created by usind the predicted clusters by inner joining the previous dataframe crypto_df.
@@ -50,11 +52,14 @@ A new dataframe is created by usind the predicted clusters by inner joining the 
 
 #### Visialization
 
-A 3D-Scatter plot using the predicted clusters is then created
+A 3D-Scatter plot using the predicted clusters is then created.
+
 ![](Images/3D_Scatter_Plot.png)
 
 A data table with all the tradeable currencies is created to be able to scroll up and down.
+
 ![](Images/Data_Table.png)
 
 Finally a 2D-Scatter plot is created between the TotalCoinsMined vs TotalCoinsSupply.
-![](Images/Mined_Supply.png)
+
+![](Images/MIned_Supply.png)
