@@ -29,6 +29,7 @@ The flat file 'crypto_data.csv' contains data for preprocessing.  It is imported
 * stored all the CoinNames in a separate dataframe called coins_name and deleted the CoinName from the original dataframe
 
 The following dataframe is the result of the preprocesing which is then used for unsupervised machine learning.
+
 ![](Images/crypto_df.png)
 
 Using the variables, Algorithm and ProofType from the above dataframe, dummies variables are created.  The data is then standardized using StandardScalar from sklearn.
@@ -43,6 +44,7 @@ An elbow curve is created to provide a means to determine the number of K means 
 
 ![](Images/K-Mean.png)
 
+From the elbow curve, it appears that 10 K means can be used for predicting the clusters.
 
 ![](Images/PCS.png)
 
