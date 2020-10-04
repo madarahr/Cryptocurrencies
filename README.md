@@ -1,11 +1,11 @@
 # Cryptocurrencies
-Unsupervised machine learning
+## Unsupervised machine learning
 
-## Background
+### Background
 Due to the rise of the cryptocurrencies, an investment bank is interested in offering new cryptocurrencies investment portfolio for its customers. A report of which cryptocurrencies are on the trading market and how cryptocurrencies could be grouped toward creating a classification for developing this new investment product is attempted to help build an investment portfolio.
 The data in the form of a csv flat file is not ideal, and hence, it will be need to be processed to fit the machine learning models. Since there is no known output for what to look for, an unsupervised learning method is used. To group the cryptocurrencies, a clustering algorithm is created to help determine investing in cryptocurrencies.
 
-## Resources
+### Resources
 The following are used to perform this analysis and the Python code is written in Jupyter Notebook.
 
 * pandas
@@ -16,9 +16,9 @@ The following are used to perform this analysis and the Python code is written i
 * sklearn.decomposition
 * matplotlib
 
-## Analysis
+### Analysis
 
-### Data Preprocessing
+#### Data Preprocessing
 The flat file 'crypto_data.csv' contains data for preprocessing.  It is imported into a dataframe while using the crytocurrency ticker as an index.  The data type of each of the columns is verified before starting the preprocessing.  The following steps were hence taken:
 * removed all cryptocurrencies which do not have any algorithm mentioned
 * selected only the cryptocurrencies that are trading
@@ -33,12 +33,12 @@ The following dataframe is the result of the preprocesing which is then used for
 
 Using the variables, Algorithm and ProofType from the above dataframe, dummies variables are created.  The data is then standardized using StandardScalar from sklearn.
 
-### Reducing Data Dimensions
+#### Reducing Data Dimensions
 
 Using Eigenvectors, the PCA dimensions are reduced to 3 with a dataframe to be used for clustering.
 
 
-### Clustering Cryptocurrencies Using K-Means
+#### Clustering Cryptocurrencies Using K-Means
 AN elbow curve is created to provide a means to determine the number of K means and providing a predicted cluster.
 
 ![](Images/K-Mean.png)
@@ -48,7 +48,7 @@ A new dataframe is created by usind the predicted clusters by inner joining the 
 
 ![](Images/clustered_df.png)
 
-### Visialization
+#### Visialization
 
 A 3D-Scatter plot using the predicted clusters is then created
 ![](Images/3D_Scatter_Plot.png)
