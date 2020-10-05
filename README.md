@@ -32,15 +32,15 @@ The following dataframe is the result of the preprocesing which is then used for
 
 ![](Images/crypto_df.png)
 
-Using the variables, Algorithm and ProofType from the above dataframe, dummies variables are created.  The data is then standardized using StandardScalar from sklearn.
+Using the variables, Algorithm and ProofType from the above dataframe, dummies variables are created.  The dataset now has several features with values on different scales.  The data is then standardized using StandardScalar from sklearn.
 
 #### Reducing Data Dimensions
 
-Using Eigenvectors, the PCA dimensions are reduced to 3 with a dataframe to be used for clustering.
+Using Eigenvectors, the features are reduced to 3 Principal Component Analysis (PCA) dimensions with a dataframe to be used for clustering.
 
 
 #### Clustering Cryptocurrencies Using K-Means
-An elbow curve is created to provide a means to determine the number of K means and providing a predicted cluster.
+An elbow curve is created to provide a means to determine the number of K means and providing a predicted number of clusters.
 
 ![](Images/K-Mean.png)
 
@@ -48,7 +48,7 @@ From the elbow curve, it appears that 10 K means can be used for predicting the 
 
 ![](Images/PCS.png)
 
-A new dataframe is created by usind the predicted clusters by inner joining the previous dataframe crypto_df.
+A new dataframe is created by using the predicted clusters by inner joining the previous dataframe crypto_df.
 
 ![](Images/clustered_df.png)
 
